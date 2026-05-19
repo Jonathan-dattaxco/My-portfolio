@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name — Portfolio</title>
+<title>Jonathan Wang — Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -18,11 +18,11 @@
     --text: #e8dfc8;
     --accent-red: #b84a3a;
   }
-
+ 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
   html { scroll-behavior: smooth; }
-
+ 
   body {
     background: var(--bg);
     color: var(--text);
@@ -31,7 +31,7 @@
     line-height: 1.6;
     overflow-x: hidden;
   }
-
+ 
   /* ── GRAIN OVERLAY ── */
   body::before {
     content: '';
@@ -42,7 +42,7 @@
     z-index: 1000;
     opacity: .5;
   }
-
+ 
   /* ── NAV ── */
   nav {
     position: fixed;
@@ -82,7 +82,7 @@
     transition: color .2s;
   }
   .nav-links a:hover { color: var(--gold); }
-
+ 
   /* ── HERO ── */
   .hero {
     min-height: 100vh;
@@ -181,7 +181,7 @@
     transform: translateY(-2px);
   }
   .link-pill svg { width: 14px; height: 14px; flex-shrink: 0; }
-
+ 
   /* ── SECTION WRAPPER ── */
   section { padding: 100px 48px; max-width: 1100px; margin: 0 auto; }
   .section-header {
@@ -210,7 +210,7 @@
     background: var(--border);
     margin-left: 16px;
   }
-
+ 
   /* ── ABOUT ── */
   .about-grid {
     display: grid;
@@ -247,7 +247,7 @@
     color: var(--muted);
     margin-top: 4px;
   }
-
+ 
   /* ── ACTIVITY CARDS ── */
   .activities-grid {
     display: grid;
@@ -278,7 +278,7 @@
   .activity-card:hover::before { transform: scaleY(1); }
   .activity-card.expanded { border-color: var(--gold); background: #201e18; }
   .activity-card.expanded::before { transform: scaleY(1); }
-
+ 
   .card-top {
     display: flex;
     justify-content: space-between;
@@ -346,7 +346,7 @@
     flex-shrink: 0;
   }
   .activity-card.expanded .expand-icon { transform: rotate(45deg); }
-
+ 
   /* ── PROCESS TIMELINE (inside card) ── */
   .process-panel {
     max-height: 0;
@@ -429,7 +429,7 @@
     color: var(--muted);
     line-height: 1.6;
   }
-
+ 
   /* ── FEATURED ── */
   .featured-block {
     border: 1px solid var(--border);
@@ -473,7 +473,7 @@
     line-height: 1.8;
     max-width: 600px;
   }
-
+ 
   /* ── SKILLS / HONORS ── */
   .tags-cloud {
     display: flex;
@@ -497,7 +497,7 @@
     background: rgba(201,151,58,.06);
   }
   .tag.highlight { border-color: var(--gold-dim); color: var(--gold); }
-
+ 
   /* ── FOOTER ── */
   footer {
     border-top: 1px solid var(--border);
@@ -521,7 +521,7 @@
     color: var(--muted);
     opacity: .5;
   }
-
+ 
   /* ── SCROLL REVEAL ── */
   .reveal {
     opacity: 0;
@@ -532,13 +532,13 @@
     opacity: 1;
     transform: none;
   }
-
+ 
   /* ── ANIMATIONS ── */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(24px); }
     to   { opacity: 1; transform: none; }
   }
-
+ 
   /* ── RESPONSIVE ── */
   @media (max-width: 768px) {
     nav { padding: 18px 24px; }
@@ -554,48 +554,43 @@
 </style>
 </head>
 <body>
-
+ 
 <!-- NAV -->
 <nav id="navbar">
-  <div class="nav-logo">Your Name</div>
+  <div class="nav-logo">Jonathan Wang</div>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#activities">Activities</a></li>
-    <li><a href="#highlight">Highlight</a></li>
     <li><a href="#honors">Honors</a></li>
     <li><a href="#connect">Connect</a></li>
   </ul>
 </nav>
-
+ 
 <!-- HERO -->
 <div class="hero">
   <div class="hero-bg-lines"></div>
   <div class="hero-accent"></div>
   <div class="hero-inner">
-    <p class="hero-eyebrow">Class of 20XX &nbsp;·&nbsp; Your City, State</p>
-    <h1 class="hero-name">Your<br><em>Full Name</em></h1>
-    <p class="hero-tagline">Student · Leader · Creator · Whatever defines you</p>
+    <p class="hero-eyebrow">Class of 2028 &nbsp;·&nbsp; WPGA &nbsp;·&nbsp; Vancouver, BC, Canada</p>
+    <h1 class="hero-name">Jonathan<br><em>Wang</em></h1>
+    <p class="hero-tagline">Student · Leader · Athlete · Researcher</p>
     <div class="hero-links">
-      <a href="mailto:you@email.com" class="link-pill">
+      <a href="mailto:jonathanw100818@wpga.ca" class="link-pill">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
         Email
       </a>
-      <a href="#" class="link-pill">
+      <a href="https://www.linkedin.com/in/jonathan-wang-412765256/?skipRedirect=true" target="_blank" class="link-pill">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
         LinkedIn
       </a>
-      <a href="#" class="link-pill">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-        GitHub
-      </a>
-      <a href="#" class="link-pill">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-        Resume PDF
+      <a href="https://www.instagram.com/dattaxco" target="_blank" class="link-pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        Instagram
       </a>
     </div>
   </div>
 </div>
-
+ 
 <!-- ABOUT -->
 <section id="about">
   <div class="section-header reveal">
@@ -605,424 +600,201 @@
   </div>
   <div class="about-grid reveal">
     <div class="about-text">
-      <p>Replace this with a compelling 3–4 sentence bio. Talk about what drives you — your <strong>curiosity, values, or a defining experience</strong>. What do you care about and why does it matter to you?</p>
+      <p>As a Catholic sophomore, I'm driven by values of <strong>self-sufficiency</strong> and being someone who can assist rather than burden people in every aspect of life — from academic to physical. I carry those values into everything I do.</p>
       <br>
-      <p>A second paragraph can zoom out: what threads connect your activities? What kind of <strong>thinker, maker, or leader</strong> are you becoming? Admissions readers want a person, not a list.</p>
+      <p>My activities are <strong>deliberately connected</strong>. Leadership acts as work experience and a way to test my knowledge in real life. Athletics reinforces my discipline and health. Research and learning form the basis of what I do — everything from leadership to competition experience is derived from that. Each thread ties back to the same goal: becoming someone who shows up fully, in any room, for any challenge.</p>
     </div>
     <div class="about-divider"></div>
     <div class="about-stats">
       <div class="stat-item">
-        <div class="stat-num">4.X</div>
-        <div class="stat-label">GPA (Weighted)</div>
+        <div class="stat-num">3.7</div>
+        <div class="stat-label">GPA (Unweighted)</div>
       </div>
       <div class="stat-item">
-        <div class="stat-num">15XX</div>
+        <div class="stat-num">1550</div>
         <div class="stat-label">SAT Score</div>
       </div>
       <div class="stat-item">
-        <div class="stat-num">5+</div>
-        <div class="stat-label">AP / IB Courses</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">200h</div>
-        <div class="stat-label">Community Service</div>
+        <div class="stat-num">3</div>
+        <div class="stat-label">AP Courses (Sophomore Year)</div>
       </div>
     </div>
   </div>
 </section>
-
+ 
 <!-- ACTIVITIES -->
 <section id="activities" style="padding-top: 0;">
   <div class="section-header reveal">
     <span class="section-num">02</span>
-    <h2 class="section-title">Activities & Process</h2>
+    <h2 class="section-title">Activities</h2>
     <div class="section-divider"></div>
   </div>
-
+ 
   <div class="activities-grid">
-
-    <!-- CARD 1 -->
-    <div class="activity-card reveal" onclick="toggleCard(this)">
+ 
+    <!-- CARD 1 — LEADERSHIP -->
+    <div class="activity-card reveal">
       <div class="card-top">
         <span class="card-tag">Leadership</span>
-        <span class="card-years">20XX – Present</span>
+        <span class="card-years">Present</span>
       </div>
-      <h3 class="card-title">Activity One</h3>
-      <p class="card-role">Your Role / Position</p>
-      <p class="card-desc">One or two sentences on what this activity is and what you specifically did — not just what the club does, but your contribution.</p>
-      <button class="card-expand-btn">
-        <span>See Process</span>
-        <span class="expand-icon">
-          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5">
-            <line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/>
-          </svg>
-        </span>
-      </button>
-      <div class="process-panel">
-        <div class="process-divider"></div>
-        <p class="process-label">How it happened</p>
-        <div class="process-steps">
-          <div class="process-step">
-            <div class="step-spine"><div class="step-dot"></div><div class="step-line"></div></div>
-            <div class="step-content">
-              <p class="step-phase">Phase 01 — Start</p>
-              <p class="step-title">How you got involved</p>
-              <p class="step-detail">Describe what drew you in — a moment, a problem, a person. What did you notice or feel that made you say yes?</p>
-            </div>
-          </div>
-          <div class="process-step">
-            <div class="step-spine"><div class="step-dot"></div><div class="step-line"></div></div>
-            <div class="step-content">
-              <p class="step-phase">Phase 02 — Build</p>
-              <p class="step-title">What you actually did</p>
-              <p class="step-detail">The real work. Concrete actions, decisions, obstacles you hit. This is where specifics make it real.</p>
-            </div>
-          </div>
-          <div class="process-step">
-            <div class="step-spine"><div class="step-dot"></div><div class="step-line"></div></div>
-            <div class="step-content">
-              <p class="step-phase">Phase 03 — Impact</p>
-              <p class="step-title">What changed because of it</p>
-              <p class="step-detail">Measurable or human outcomes. What exists now that didn't before? How were you or others different?</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <h3 class="card-title">VYMUN 2026</h3>
+      <p class="card-role">Director of Logistics</p>
+      <p class="card-desc">Managing the business side of a Model UN conference — controlling budget, layout, and networking with other schools — in collaboration with the Secretary General. The bridge between two years of public speaking experience and a love of business.</p>
     </div>
-
-    <!-- CARD 2 -->
-    <div class="activity-card reveal" onclick="toggleCard(this)">
+ 
+    <!-- CARD 2 — RESEARCH -->
+    <div class="activity-card reveal">
       <div class="card-top">
         <span class="card-tag">Research</span>
-        <span class="card-years">20XX – 20XX</span>
+        <span class="card-years">In Progress</span>
       </div>
-      <h3 class="card-title">Activity Two</h3>
-      <p class="card-role">Your Role / Position</p>
-      <p class="card-desc">One or two sentences on what this activity is and what you specifically did — not just what the org does, but your piece of it.</p>
-      <button class="card-expand-btn">
-        <span>See Process</span>
-        <span class="expand-icon">
-          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5">
-            <line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/>
-          </svg>
-        </span>
-      </button>
-      <div class="process-panel">
-        <div class="process-divider"></div>
-        <p class="process-label">How it happened</p>
-        <div class="process-steps">
-          <div class="process-step">
-            <div class="step-spine"><div class="step-dot"></div><div class="step-line"></div></div>
-            <div class="step-content">
-              <p class="step-phase">Phase 01 — Curiosity</p>
-              <p class="step-title">The question that started it</p>
-              <p class="step-detail">What were you trying to understand or solve? What didn't exist yet, or what was broken?</p>
-            </div>
-          </div>
-          <div class="process-step">
-            <div class="step-spine"><div class="step-dot"></div><div class="step-line"></div></div>
-            <div class="step-content">
-              <p class="step-phase">Phase 02 — Method</p>
-              <p class="step-title">How you approached it</p>
-              <p class="step-detail">The tools, techniques, collaborators, or frameworks you used. What was your actual process day-to-day?</p>
-            </div>
-          </div>
-          <div class="process-step">
-            <div class="step-spine"><div class="step-dot"></div><div class="step-line"></div></div>
-            <div class="step-content">
-              <p class="step-phase">Phase 03 — Finding</p>
-              <p class="step-title">What you discovered</p>
-              <p class="step-detail">Results, insights, or what you'd do differently. What do you know now that you didn't before?</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <h3 class="card-title">UBC Psychology Research</h3>
+      <p class="card-role">Prospective Research Collaborator</p>
+      <p class="card-desc">Actively networking with UBC alumni Jack Bottyan and student Steve Weon to secure a psychology research opportunity — pursuing the intersection of academic curiosity and real-world scientific work.</p>
     </div>
-
-    <!-- CARD 3 -->
-    <div class="activity-card reveal" onclick="toggleCard(this)">
-      <div class="card-top">
-        <span class="card-tag">Creative</span>
-        <span class="card-years">20XX – Present</span>
-      </div>
-      <h3 class="card-title">Activity Three</h3>
-      <p class="card-role">Your Role / Position</p>
-      <p class="card-desc">Describe the creative work in one sentence. Then — who is it for? Why does it matter to you beyond the craft itself?</p>
-      <button class="card-expand-btn">
-        <span>See Process</span>
-        <span class="expand-icon">
-          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5">
-            <line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/>
-          </svg>
-        </span>
-      </button>
-      <div class="process-panel">
-        <div class="process-divider"></div>
-        <p class="process-label">How it happened</p>
-        <div class="process-steps">
-          <div class="process-step">
-            <div class="step-spine"><div class="step-dot"></div><div class="step-line"></div></div>
-            <div class="step-content">
-              <p class="step-phase">Phase 01 — Spark</p>
-              <p class="step-title">Where the idea came from</p>
-              <p class="step-detail">The initial impulse, inspiration, or frustration. Why this, why now?</p>
-            </div>
-          </div>
-          <div class="process-step">
-            <div class="step-spine"><div class="step-dot"></div><div class="step-line"></div></div>
-            <div class="step-content">
-              <p class="step-phase">Phase 02 — Make</p>
-              <p class="step-title">The making of it</p>
-              <p class="step-detail">The actual creative or technical process — what drafts, iterations, or failures looked like before the final form.</p>
-            </div>
-          </div>
-          <div class="process-step">
-            <div class="step-spine"><div class="step-dot"></div><div class="step-line"></div></div>
-            <div class="step-content">
-              <p class="step-phase">Phase 03 — Share</p>
-              <p class="step-title">Getting it out into the world</p>
-              <p class="step-detail">How it was received, what you learned from the audience, and what you'd make next.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD 4 -->
-    <div class="activity-card reveal" onclick="toggleCard(this)">
+ 
+    <!-- CARD 3 — SERVICE -->
+    <div class="activity-card reveal">
       <div class="card-top">
         <span class="card-tag">Service</span>
-        <span class="card-years">20XX – Present</span>
+        <span class="card-years">Present</span>
       </div>
-      <h3 class="card-title">Activity Four</h3>
-      <p class="card-role">Your Role / Position</p>
-      <p class="card-desc">One sentence on what this organization does, then one on what you personally did. Specifics beat generalities every time.</p>
-      <button class="card-expand-btn">
-        <span>See Process</span>
-        <span class="expand-icon">
-          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5">
-            <line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/>
-          </svg>
-        </span>
-      </button>
-      <div class="process-panel">
-        <div class="process-divider"></div>
-        <p class="process-label">How it happened</p>
-        <div class="process-steps">
-          <div class="process-step">
-            <div class="step-spine"><div class="step-dot"></div><div class="step-line"></div></div>
-            <div class="step-content">
-              <p class="step-phase">Phase 01 — Why</p>
-              <p class="step-title">The moment you felt called to act</p>
-              <p class="step-detail">What problem or person made you care? The origin story of your commitment.</p>
-            </div>
-          </div>
-          <div class="process-step">
-            <div class="step-spine"><div class="step-dot"></div><div class="step-line"></div></div>
-            <div class="step-content">
-              <p class="step-phase">Phase 02 — Sustain</p>
-              <p class="step-title">Showing up, week after week</p>
-              <p class="step-detail">What did consistent effort look like? What kept you going when it was hard or unglamorous?</p>
-            </div>
-          </div>
-          <div class="process-step">
-            <div class="step-spine"><div class="step-dot"></div><div class="step-line"></div></div>
-            <div class="step-content">
-              <p class="step-phase">Phase 03 — Ripple</p>
-              <p class="step-title">The change you helped create</p>
-              <p class="step-detail">Stories matter more than numbers here — but use both. Who benefited and how do you know?</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <h3 class="card-title">GoodGuysBC</h3>
+      <p class="card-role">Club President & School Ambassador</p>
+      <p class="card-desc">Leading the school chapter of a charity organization managing six figures in assets and $67,000+ CAD donated to date. Responsibilities include fund management, marketing, team organization, and producing food on-site — while leveraging the service council to secure a full WPGA sponsorship.</p>
     </div>
-
-    <!-- CARD 5 -->
-    <div class="activity-card reveal" onclick="toggleCard(this)">
+ 
+    <!-- CARD 4 — CREATIVE -->
+    <div class="activity-card reveal">
+      <div class="card-top">
+        <span class="card-tag">Creative</span>
+        <span class="card-years">In Progress</span>
+      </div>
+      <h3 class="card-title">Grappling Media Page</h3>
+      <p class="card-role">Founder & Content Creator</p>
+      <p class="card-desc">Building a social media presence dedicated to promoting grappling combat sports — combining an athlete's insider perspective with a passion for growing the sport's community and visibility.</p>
+    </div>
+ 
+    <!-- CARD 5 — ATHLETICS -->
+    <div class="activity-card reveal">
       <div class="card-top">
         <span class="card-tag">Athletics</span>
-        <span class="card-years">20XX – Present</span>
+        <span class="card-years">Present</span>
       </div>
-      <h3 class="card-title">Activity Five</h3>
-      <p class="card-role">Your Role / Position</p>
-      <p class="card-desc">What does competing or training teach you about yourself? One sentence on the sport, one on what you uniquely bring to the team.</p>
-      <button class="card-expand-btn">
-        <span>See Process</span>
-        <span class="expand-icon">
-          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5">
-            <line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/>
-          </svg>
-        </span>
-      </button>
-      <div class="process-panel">
-        <div class="process-divider"></div>
-        <p class="process-label">How it happened</p>
-        <div class="process-steps">
-          <div class="process-step">
-            <div class="step-spine"><div class="step-dot"></div><div class="step-line"></div></div>
-            <div class="step-content">
-              <p class="step-phase">Phase 01 — Foundation</p>
-              <p class="step-title">Building the baseline</p>
-              <p class="step-detail">Early days, early struggles. What did you have to learn or unlearn to get better?</p>
-            </div>
-          </div>
-          <div class="process-step">
-            <div class="step-spine"><div class="step-dot"></div><div class="step-line"></div></div>
-            <div class="step-content">
-              <p class="step-phase">Phase 02 — Challenge</p>
-              <p class="step-title">The obstacle that defined you</p>
-              <p class="step-detail">Injury, loss, a slump — what went wrong, and what did you choose to do about it?</p>
-            </div>
-          </div>
-          <div class="process-step">
-            <div class="step-spine"><div class="step-dot"></div><div class="step-line"></div></div>
-            <div class="step-content">
-              <p class="step-phase">Phase 03 — Growth</p>
-              <p class="step-title">Where you are now</p>
-              <p class="step-detail">Achievements, sure — but more importantly, what kind of competitor and teammate have you become?</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <h3 class="card-title">Wrestling & BJJ</h3>
+      <p class="card-role">Competitive Grappling Athlete</p>
+      <p class="card-desc">Competing for Westsider Wrestling and Gracie Barra Kitsilano. Ranked <strong>#6 in Canada at 69kg</strong> in wrestling, and <strong>Vancouver BJJ Champion</strong> in the Gi 155lbs division — pursuing mastery across two distinct grappling disciplines simultaneously.</p>
     </div>
-
-    <!-- CARD 6 -->
-    <div class="activity-card reveal" onclick="toggleCard(this)">
+ 
+    <!-- CARD 6 — ENTREPRENEURSHIP -->
+    <div class="activity-card reveal">
       <div class="card-top">
-        <span class="card-tag">Work / Entrepreneurship</span>
-        <span class="card-years">20XX – 20XX</span>
+        <span class="card-tag">Entrepreneurship</span>
+        <span class="card-years">Present</span>
       </div>
-      <h3 class="card-title">Activity Six</h3>
-      <p class="card-role">Your Role / Position</p>
-      <p class="card-desc">Describe the venture or job. What problem did it solve, and what responsibility did you own — not just participate in?</p>
-      <button class="card-expand-btn">
-        <span>See Process</span>
-        <span class="expand-icon">
-          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5">
-            <line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/>
-          </svg>
-        </span>
-      </button>
-      <div class="process-panel">
-        <div class="process-divider"></div>
-        <p class="process-label">How it happened</p>
-        <div class="process-steps">
-          <div class="process-step">
-            <div class="step-spine"><div class="step-dot"></div><div class="step-line"></div></div>
-            <div class="step-content">
-              <p class="step-phase">Phase 01 — Idea</p>
-              <p class="step-title">Identifying the gap</p>
-              <p class="step-detail">What was missing or broken? How did you confirm the problem was real before building a solution?</p>
-            </div>
-          </div>
-          <div class="process-step">
-            <div class="step-spine"><div class="step-dot"></div><div class="step-line"></div></div>
-            <div class="step-content">
-              <p class="step-phase">Phase 02 — Execute</p>
-              <p class="step-title">Making it real</p>
-              <p class="step-detail">The unglamorous logistics — funding, recruiting, pivoting. What did you get wrong first?</p>
-            </div>
-          </div>
-          <div class="process-step">
-            <div class="step-spine"><div class="step-dot"></div><div class="step-line"></div></div>
-            <div class="step-content">
-              <p class="step-phase">Phase 03 — Learn</p>
-              <p class="step-title">What it taught you about yourself</p>
-              <p class="step-detail">Not just the outcome, but the mindset shift. What does failure or success look like up close?</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <h3 class="card-title">Mountain Needs</h3>
+      <p class="card-role">VP of Finance</p>
+      <p class="card-desc">Co-founded a startup ski gear company with five peers through Junior Achievement's Entrepreneurship 12 program. Over 6–7 months, the team became the <strong>highest-grossing company in the course's history</strong> — with finances owned end-to-end as VP.</p>
     </div>
-
+ 
   </div>
 </section>
-
-<!-- HIGHLIGHT / FEATURED -->
-<section id="highlight" style="padding-top: 0;">
-  <div class="section-header reveal">
-    <span class="section-num">03</span>
-    <h2 class="section-title">A Defining Moment</h2>
-    <div class="section-divider"></div>
-  </div>
-  <div class="featured-block reveal">
-    <p class="featured-eyebrow">In your own words</p>
-    <p class="featured-quote">"Replace this with a real sentence or two that captures something true about who you are — a belief, a moment, a realization that shaped you."</p>
-    <p class="featured-context">
-      Use this space for a short narrative paragraph: a specific story, project, or experience that doesn't fit neatly into a bullet point. This is your chance to show a reader something about your character that a list of activities can't. Keep it under 150 words — specificity beats length.
-    </p>
-  </div>
-</section>
-
+ 
 <!-- HONORS / SKILLS -->
 <section id="honors" style="padding-top: 0;">
   <div class="section-header reveal">
-    <span class="section-num">04</span>
-    <h2 class="section-title">Honors & Skills</h2>
+    <span class="section-num">03</span>
+    <h2 class="section-title">Honours & Skills</h2>
     <div class="section-divider"></div>
   </div>
-  <div style="margin-bottom: 40px; reveal">
+ 
+  <div style="margin-bottom: 48px;">
     <p style="font-family: 'DM Mono', monospace; font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-dim); margin-bottom: 20px;">Recognition</p>
     <div class="tags-cloud reveal">
-      <span class="tag highlight">Award / Honor Name</span>
-      <span class="tag highlight">National Merit / AP Scholar</span>
-      <span class="tag highlight">Scholarship Name</span>
-      <span class="tag">Competition Placement</span>
-      <span class="tag">Dean's List / Honor Roll</span>
-      <span class="tag">Fellowship / Program Name</span>
+      <span class="tag highlight">#1 — Mini Piri Wrestling Championships 69kg</span>
+      <span class="tag highlight">#1 — SFU West Coast Open Wrestling 69kg</span>
+      <span class="tag highlight">#1 — BCWA Western Canada Age Class U17</span>
+      <span class="tag highlight">#1 — Grappling Industries Vancouver</span>
+      <span class="tag">#4 — AVA Ultimate Submission Grappling</span>
+      <span class="tag">Math Accelerated Program</span>
     </div>
   </div>
-  <div>
-    <p style="font-family: 'DM Mono', monospace; font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-dim); margin-bottom: 20px; margin-top: 40px;">Skills & Tools</p>
+ 
+  <div style="margin-bottom: 48px;">
+    <p style="font-family: 'DM Mono', monospace; font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-dim); margin-bottom: 20px;">AP Courses</p>
     <div class="tags-cloud reveal">
-      <span class="tag">Skill One</span>
-      <span class="tag">Skill Two</span>
-      <span class="tag">Language / Software</span>
-      <span class="tag">Instrument / Medium</span>
-      <span class="tag">Technical Skill</span>
-      <span class="tag">Language Spoken</span>
-      <span class="tag">Certifications</span>
-      <span class="tag">Other Skill</span>
+      <span class="tag">AP Statistics</span>
+      <span class="tag">AP Mandarin</span>
+      <span class="tag">AP Computer Science Principles</span>
+    </div>
+  </div>
+ 
+  <div>
+    <p style="font-family: 'DM Mono', monospace; font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-dim); margin-bottom: 20px;">Skills & Tools</p>
+    <div class="tags-cloud reveal">
+      <span class="tag">Google Gemini AI Certified</span>
+      <span class="tag">Mandarin Chinese — Fluent (AP 5/5)</span>
+      <span class="tag">Harvard CS50P — Intro to Python</span>
+      <span class="tag">Harvard CS50R — Intro to R</span>
     </div>
   </div>
 </section>
-
+ 
 <!-- CONNECT -->
 <section id="connect" style="padding-top: 0;">
   <div class="section-header reveal">
-    <span class="section-num">05</span>
+    <span class="section-num">04</span>
     <h2 class="section-title">Get in Touch</h2>
     <div class="section-divider"></div>
   </div>
   <div class="reveal" style="max-width: 560px;">
     <p style="font-size: 1.05rem; color: var(--muted); line-height: 1.8; margin-bottom: 36px;">
-      Whether you're an admissions counselor, a potential collaborator, or just curious — feel free to reach out. I'm always open to conversations about <strong style="color: var(--text)">your topics of interest</strong>.
+      Check out the links below to contact me, get a better insight into my work, or see some certifications. I'm currently looking for <strong style="color: var(--text)">research opportunities</strong> and help for my <strong style="color: var(--text)">grappling media page</strong> — but feel free to contact me for anything!
     </p>
-    <div class="hero-links" style="justify-content: flex-start;">
-      <a href="mailto:you@email.com" class="link-pill">
+ 
+    <p style="font-family: 'DM Mono', monospace; font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-dim); margin-bottom: 16px;">Personal</p>
+    <div class="hero-links" style="justify-content: flex-start; margin-bottom: 36px;">
+      <a href="mailto:jonathanw100818@wpga.ca" class="link-pill">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
-        Email Me
+        jonathanw100818@wpga.ca
       </a>
-      <a href="#" class="link-pill">
+      <a href="https://www.linkedin.com/in/jonathan-wang-412765256/?skipRedirect=true" target="_blank" class="link-pill">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
         LinkedIn
+      </a>
+      <a href="https://www.instagram.com/dattaxco" target="_blank" class="link-pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        @dattaxco
+      </a>
+    </div>
+ 
+    <p style="font-family: 'DM Mono', monospace; font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-dim); margin-bottom: 16px;">Work & Organisation</p>
+    <div class="hero-links" style="justify-content: flex-start;">
+      <a href="mailto:wpga@goodguysbc.org" class="link-pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+        wpga@goodguysbc.org
+      </a>
+      <a href="mailto:logistics@vymun.org" class="link-pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+        logistics@vymun.org
       </a>
     </div>
   </div>
 </section>
-
+ 
 <footer>
-  <span class="footer-name">Your Name</span>
-  <span class="footer-copy">© 20XX &nbsp;·&nbsp; Built with intention</span>
+  <span class="footer-name">Jonathan Wang</span>
+  <span class="footer-copy">© 2026 &nbsp;·&nbsp; Built with intention</span>
 </footer>
-
+ 
 <script>
   // Nav scroll effect
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
     navbar.classList.toggle('scrolled', window.scrollY > 60);
   });
-
+ 
   // Scroll reveal
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver((entries) => {
@@ -1034,23 +806,10 @@
     });
   }, { threshold: 0.12 });
   reveals.forEach(el => observer.observe(el));
-
-  // Card toggle
-  function toggleCard(card) {
-    const panel = card.querySelector('.process-panel');
-    const isOpen = card.classList.contains('expanded');
-
-    // Close all others
-    document.querySelectorAll('.activity-card.expanded').forEach(c => {
-      c.classList.remove('expanded');
-      c.querySelector('.process-panel').classList.remove('open');
-    });
-
-    if (!isOpen) {
-      card.classList.add('expanded');
-      panel.classList.add('open');
-    }
-  }
+ 
+  // Card toggle (reserved for future process panel re-activation)
+  function toggleCard(card) {}
+ 
 </script>
 </body>
 </html>
